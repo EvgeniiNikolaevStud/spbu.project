@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>vk parser</title>
+    <script src ="eel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head> 
+<body>
+    <section class="section">
+        <h1>Введите данные:</h1>
+        <div class="login">
+            <input type="text" id = "vk_login" placeholder="Введите логин..." required="">
+        </div>
+        <div class="password">
+            <input type="password" id = "vk_password" placeholder="Введите пароль..." required="">
+        </div>
+        <div class="link">
+            <input type="text" id = "vk_link" placeholder="Вставьте ссылку..." required="">
+        </div>
+        <div class="button">
+            <button type="button" id="start" onclick="display_id()">
+                Начать
+            </button>
+        </div>
+    </section>
+
+    
+        
+    <script type="text/javascript">
+    async function display_id(){
+        let login = document.getElementById('vk_login').value;
+        let password = document.getElementById('vk_password').value;
+        let user_link = document.getElementById('vk_link').value;
+        let result = await eel.get_id(login,password,user_link)();
+    }
+    </script>
+</body>
+</html>

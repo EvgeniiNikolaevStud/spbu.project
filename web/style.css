@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #d5d7da;
+}
+.section{
+    padding: 80px 110px 80px 110px;
+    background: #ffffff;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    -webkit-box-shadow: 0 0 30px 10px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 0 30px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 0 30px 10px rgba(0,0,0,0.15);
+
+
+}
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: default;
+}
+.login input{
+
+    cursor: text;
+    padding: 10px 80px 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border: 1px solid #7c6d6d;
+}
+.password input{
+
+    cursor: text;
+    padding: 10px 80px 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border: 1px solid #7c6d6d;
+}
+.link input{
+
+    cursor: text;
+    padding: 10px 80px 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #7c6d6d;
+    border-bottom-left-radius: 0;
+}
+
+button{
+    margin: 15px auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px 10px 30px;
+    color: black;
+    background: white;
+    user-select: none;
+    border-radius: 5px;
+    border: 1px solid #7c6d6d;
+    border-bottom-left-radius: 0;
+    background: #ea7d7d;
+
+
+
+}
+button:hover {
+    box-shadow: 0 0 40px 40px #d3cccc inset;
+    opacity: 0.8;
+    transition-duration: 0.5s;
+}
